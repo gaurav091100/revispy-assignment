@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import styles from './categories.module.css';
 import {API_BASE_URL} from "../../config/config";
 
-// const API_BASE_URL = 'http://localhost:8080/api/v1';
 const CATEGORIES_PER_PAGE = 6;
 
 const Categories: React.FC = () => {

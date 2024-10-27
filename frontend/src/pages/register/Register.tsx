@@ -15,7 +15,7 @@ const initialUserInput: UserInput = {
   email: '',
   password: '',
 };
-const Register = () => {
+const Register:React.FC = () => {
   const [userInput, setUserInput] = useState<UserInput>(initialUserInput);
   const [errors, setErrors] = useState<{register?:string, name?: string; email?: string; password?: string }>({});
 
