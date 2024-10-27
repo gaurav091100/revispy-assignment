@@ -13,7 +13,7 @@ const initialUserInput: UserInput = {
   email: '',
   password: '',
 };
-const Login = () => {
+const Login:React.FC  = () => {
   const [userInput, setUserInput] = useState<UserInput>(initialUserInput);
   const [showPassword,setShowPassword] = useState<boolean>(false);
   const [errors, setErrors] = useState<{login?:string, email?: string; password?: string }>({});

@@ -4,7 +4,7 @@ import cartIcon from "../../assets/icons/Cart.svg";
 import NavIcon from "./NavIcon";
 import styles from "./navIcons.module.css";
 
-const NavIcons = () => {
+const NavIcons:React.FC  = () => {
   return (
     <div className={styles.navIcons}>
       <NavIcon icon={searchIcon} />
