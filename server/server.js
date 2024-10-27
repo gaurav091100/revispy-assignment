@@ -8,7 +8,7 @@ require("dotenv").config();
 
 // middleware-
 app.use(express.json());
-app.use(cors());
+app.use(cors({ credentials: true, origin: "https://frontend-revispy.vercel.app" }));
 
 
 // routes-
