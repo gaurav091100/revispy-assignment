@@ -1,0 +1,21 @@
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+}
+.navList > li {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.navList > li > a {
+  text-decoration: none;
+  color: #000;
+}
+.navList > li:hover {
+  color: gray;
+}

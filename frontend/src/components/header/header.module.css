@@ -1,0 +1,76 @@
+.header {
+  padding: 15px 40px;
+}
+.header > ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+  list-style: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.52px;
+}
+
+.header > ul > li {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.header > ul > li:hover {
+  color: gray;
+}
+.header > .navbar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offersContainer {
+    padding: 10px 0;
+  background-color: #f4f4f4;
+}
+ .offersContainer > p {
+    text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+}
+
+
+.userDropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.userDropdown span {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%; /* Position below the dropdown trigger */
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it appears above other elements */
+  min-width: 120px;
+  margin-top: 5px; /* Space between dropdown and trigger */
+}
+
+.dropdownMenu button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdownMenu button:hover {
+  background-color: #f1f1f1; /* Hover effect */
+}
+

@@ -1,0 +1,42 @@
+.container {
+  margin: 30px auto auto auto;
+  border: 1px solid #c1c1c1;
+  background-color: #fff;
+padding: 40px;
+max-width: 576px;
+border-radius: 20px;
+}
+
+.container > h2{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.73px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container > form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 20px;
+}
+
+.container > form > p{
+font-size: 16px;
+font-weight: 400;
+line-height: 19.36px;
+text-align: center;
+margin-top: 30px;
+
+}
+.container > form > p > a{
+  text-decoration: none;
+  color: #000;
+font-weight: 500;
+transition: all 0.5s;
+}
+
+.container > form > p > a:hover{
+  color: gray;
+}
