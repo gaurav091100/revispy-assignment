@@ -1,20 +1,16 @@
-const express = require("express");
-const authRouter = require("./routes/auth");
-const categoryRouter = require("./routes/category");
-const app = express();
-const cors = require("cors");
-require("dotenv").config();
+const dbConnection = require("./config/database");
+const app = require("./server");
 
 
-// middleware-
-app.use(express.json());
-app.use(cors());
-
-
-// routes-
-app.use("/api/v1", authRouter)
-app.use("/api/v1", categoryRouter)
-
-
-// exports-
-module.exports = app;
+// server-
+app.listen(process.env.PORT, async ()=>{
+    try{
+        await dbConnection;
+        console.log("Database connected successfully");
+        console.log(`Server is successfully running on PORT ${process.env.PORT}`);
+    }
+    catch(error){
+        console.log("Database not connected");
+        console.log("OOP's something is wrong, server is not running")
+    }
+})
